@@ -192,21 +192,21 @@
               class="navbar-image1" />
             <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
               <nav class="navbar-links1">
-                <span class="thq-link thq-body-small"><span>Inicial</span></span>
+                <span class="thq-link thq-body-small"><span id="menu1">Inicial</span></span>
                 <span class="thq-link thq-body-small">
-                  <span>Imóveis</span>
+                  <span id="menu2">Imóveis</span>
                 </span>
                 <span class="thq-link thq-body-small">
-                  <span>Sobre nós</span>
+                  <span id="menu3">Sobre nós</span>
                 </span>
                 <span class="thq-link thq-body-small">
-                  <span>Contato</span>
+                  <span id="menu4">Contato</span>
                 </span>
 
               </nav>
               <div class="navbar-buttons1">
-                <button class="button">PT-BR</button>
-                <button class="button">EN</button>
+                <button class="button" type="button" onclick="fnIdiomaPortugues()">PT-BR</button>
+                <button class="button" type="button" onclick="fnIdiomaIngles()">EN</button>
               </div>
             </div>
             <div data-thq="thq-burger-menu" class="navbar-burger-menu">
@@ -232,16 +232,16 @@
                 </div>
                 <nav class="navbar-links2">
                   <span class="thq-link thq-body-small">
-                    <span>Inicial</span>
+                    <span id="menu1">Inicial</span>
                   </span>
                   <span class="thq-link thq-body-small">
-                    <span>Imóveis</span>
+                    <span id="menu2">Imóveis</span>
                   </span>
                   <span class="thq-link thq-body-small">
-                    <span>Sobre nós</span>
+                    <span id="menu3">Sobre nós</span>
                   </span>
                   <span class="thq-link thq-body-small">
-                    <span>Contato</span>
+                    <span id="menu4">Contato</span>
                   </span>
 
                 </nav>
@@ -257,10 +257,10 @@
           <div class="hero-column thq-section-padding thq-section-max-width">
             <div class="hero-content1">
               <h1 class="hero-text1 thq-heading-1">
-                <span>Encontre a casa dos seus sonhos</span>
+                <span id="tituloprincipal">Encontre a casa dos seus sonhos</span>
               </h1>
               <p class="hero-text2 thq-body-large">
-                <span>
+                <span id="subtitulo">
                   Explore nossa ampla variedade de imóveis e encontre a casa perfeita para você.
                 </span>
               </p>
@@ -268,11 +268,11 @@
             <div class="hero-actions">
               <button class="thq-button-filled hero-button1">
                 <span class="thq-body-small">
-                  <span>Pesquise Imóveis</span>
+                  <span id="botao1">Pesquise Imóveis</span>
                 </span>
               </button>
               <button class="thq-button-outline hero-button2">
-                <span class="thq-body-small"><span>Saiba Mais</span></span>
+                <span class="thq-body-small"><span id="botao2">Saiba Mais</span></span>
               </button>
             </div>
           </div>
@@ -391,18 +391,18 @@
       </hero-wrapper>
       <features1-wrapper class="features1-wrapper">
         <!--BANNER-->
-        <img src="images/banner01.jpg" class="banner">
+        <img src="images/banner01.jpg" class="banner" id="banner">
         <div class="banner-buttons">
-          <button class="thq-button-outline hero-button2">
+          <button class="thq-button-outline hero-button2" type="button" onclick="fnBanner1()">
             <span class="thq-body-small"><span>1</span></span>
           </button>
-          <button class="thq-button-outline hero-button2">
+          <button class="thq-button-outline hero-button2" type="button" onclick="fnBanner2()">
             <span class="thq-body-small"><span>2</span></span>
           </button>
-          <button class="thq-button-outline hero-button2">
+          <button class="thq-button-outline hero-button2" type="button" onclick="fnBanner3()">
             <span class="thq-body-small"><span>3</span></span>
           </button>
-          <button class="thq-button-outline hero-button2">
+          <button class="thq-button-outline hero-button2" type="button" onclick="fnBanner4()">
             <span class="thq-body-small"><span>4</span></span>
           </button>
         </div>
@@ -416,10 +416,10 @@
             <div class="contact-max-width thq-section-max-width">
               <div class="contact-section-title">
                 <span class="thq-body-small">
-                  <span>Entre em contato conosco hoje mesmo!</span>
+                  <span id="contato1">Entre em contato conosco hoje mesmo!</span>
                 </span>
                 <div class="contact-content1">
-                  <h2 class="thq-heading-2"><span>Entre em contato</span></h2>
+                  <h2 class="thq-heading-2"><span id="contato2">Entre em contato</span></h2>
 
                 </div>
               </div>
@@ -448,7 +448,7 @@
                   </svg>
                   <div class="contact-contact-info2">
                     <div class="contact-content5">
-                      <h3 class="contact-text6 thq-heading-3">Telefone</h3>
+                      <h3 class="contact-text6 thq-heading-3" id="contato3">Telefone</h3>
 
                     </div>
                     <span class="contact-phone thq-body-small">
@@ -464,7 +464,7 @@
                   </svg>
                   <div class="contact-contact-info3">
                     <div class="contact-content7">
-                      <h3 class="contact-text8 thq-heading-3">Escritório</h3>
+                      <h3 class="contact-text8 thq-heading-3" id="contato4">Escritório</h3>
                     </div>
                     <span class="contact-address thq-body-small">
                       <span>Av. Paulista, 100, Americana/SP</span>
@@ -483,7 +483,7 @@
               <div class="footer-content">
                 <div class="footer-newsletter">
 
-                  <span class="thq-body-small">
+                  <span class="thq-body-small" id="descricao">
                     Assine nossa newsletter para receber as últimas atualizações sobre novos recursos e lançamentos de
                     produtos.
                   </span>
@@ -494,7 +494,7 @@
                       </div>
                       <button class="thq-button-outline footer-button">
                         <span class="thq-body-small">
-                          <span>Cadastrar</span>
+                          <span id="cadastrar">Cadastrar</span>
                         </span>
                       </button>
                     </div>
@@ -509,7 +509,7 @@
                 <div class="thq-divider-horizontal"></div>
                 <div class="footer-row">
                   <span class="thq-body-small">
-                    <span>
+                    <span id="rodape">
                       © 2025 Guto Xavier. Todos os direitos reservados.
                     </span>
                   </span>
@@ -527,7 +527,7 @@
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-  
+  <script src="app.js"></script>
 </body>
 
 </html>
