@@ -63,3 +63,7 @@ function fnBanner3(){
 function fnBanner4(){
     document.getElementById("banner").src="images/banner04.jpg"
 }
+
+function fnCadastrarEmail(){
+    
+}
