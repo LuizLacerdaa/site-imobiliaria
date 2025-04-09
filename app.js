@@ -1,6 +1,3 @@
-function fnTraducaoIngles(){
-    document.getElementById
-}
 
 function fnIdiomaPortugues(){
     document.getElementById("menu1").innerText = "Inicial"
@@ -65,5 +62,17 @@ function fnBanner4(){
 }
 
 function fnCadastrarEmail(){
+    let email = document.getElementById ("cemail").value
+    alert ( "Seu Email ["+email+"] foi cadastrado com sucesso ")
+    document.getElementById("email").value = ""
+}
+
+function fnMostrarHoraAtual(){
+    const agora = new Date ()
+    const horas = agora.getHours ()
+    const minutos = agora.getMinutes()
+    const segundos = agora.getSeconds ()
+    document.getElementById("horass").innerText = (`${horas}:${minutos}:${segundos}`)
     
 }
+setInterval (fnMostrarHoraAtual, 1000)
